@@ -1,4 +1,32 @@
 .header {
-    background-image: url('~/public/images/banner.png');
-    border-radius: 10px;
+  border-radius: 10px;
+  background: url("~/public/images/banner.png") 50% no-repeat;
+  background-size: cover;
+  .box-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.tab {
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+  list-style: none;
+  padding: 0.5rem;
+  li {
+    padding: 0.5rem;
+  }
+}
+.tab-active {
+  border-bottom: 3px solid #8dd3bb;
+}
+.icon-dark {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
+    hue-rotate(0deg);
+}
+
+.box-search {
+    border-radius: 16px;
+    margin-top: -50px;
+    background: #fff;
 }
